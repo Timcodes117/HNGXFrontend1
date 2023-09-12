@@ -37,6 +37,6 @@ setInterval(()=>{
     let details = new myProfile;
     details.getCurrentDate();
     details.getTime()
-    document.getElementById("date").innerText = `${daysOfTheWeek[currentDay-1]} ${currentDate} ${months[currentMonth-1]}, ${currentYear}.`;
+    document.getElementById("date").innerText = `${daysOfTheWeek[currentDay-1]} ${currentDate} ${months[currentMonth]}, ${currentYear}.`;
     document.getElementById("time").innerText = `    ${`${hour}`.length > 1 ? `${hour}` : `0${hour}`} : ${`${minutes}`.length > 1 ? `${minutes}` : `0${minutes}`} ${hour < 12 ? "AM" : 'PM'} `
 }, 100);
